@@ -11,7 +11,7 @@ kmer = collections.Counter()
 
 #wonder what search does? It searches for k-mers.          
 def search():
-    find = input().upper()
+    find = input().lower()
     if find == "exit" or find == "stop":
         sys.exit()
     print("%s  count: %i" % (find, kmer[find]))
